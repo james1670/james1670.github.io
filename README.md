@@ -1,6 +1,6 @@
 # James Bright Das – Portfolio
 
-This is my personal portfolio website built using HTML, CSS, and JavaScript. no libraries.
+This is my personal portfolio website built using HTML, CSS, and JavaScript.
 
 🖥️ Includes:
 - GUI and CLI themed layouts

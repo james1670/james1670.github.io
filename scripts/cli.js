@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
   <b>whoami</b>      - Display my identity<br>
   <b>skills</b>      - Show my technical skills<br>
   <b>projects</b>    - List my featured projects<br>
-  <b>awards</b>      - Display my achievements<br>
   <b>others</b>      - Show my management/soft skills<br>
   <br>
   <b>🌐 Online Profiles:</b><br>
