@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta property="og:title" content="JB Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:description" content="Explore the terminal based portfolio of James Bright, a passionate software developer. Discover projects, skills, and more.">
+    <meta property="og:image" content="https://jkartik.in/kartik.png">
+    <meta property="og:url" content="https://jkartik.in">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="James Bright's Portfolio">
+    <meta name="twitter:title" content="James Bright's Portfolio">
+    <meta name="twitter:description" content="Explore the terminal based portfolio of James Bright, a passionate software developer. Discover projects, skills, and more.">
+    <meta name="twitter:image" content="https://jkartik.in/kartik.png">
+    <meta name="twitter:site" content="@kartikjain1410">
+    <meta name="twitter:creator" content="@kartikjain1410">
+    <meta name="description" content="Explore the portfolio of James Bright, a passionate software developer. Discover projects, skills, and more.">
+    <meta name="keywords" content="James Bright, Backend Developer, Cybersecurity Enthusiast, Portfolio, Software Developer, Projects, Skills">
+    <meta name="author" content="James Bright">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#001a33">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JB | Portfolio</title>
+    <link rel="stylesheet" href="./styles/cli.css">
+
+</head>
+<body>
+  <div class="gui-toggle">
+    <label class="switch">
+      <input type="checkbox" id="guiSwitch">
+      <span class="slider"></span>
+    </label>
+    <span class="gui-label">GUI Mode</span>
+  </div>
+    <div id="terminal-wrapper">
+        <div id="terminal-container">
+            <div id="terminal">
+                <div id="output"></div>
+                <div class="input-line">
+                    <span class="prompt">$</span>
+                    <div class="autocomplete-container">
+                        <span id="inputMirror"></span>
+                        <input type="text" id="commandInput" autofocus autocomplete="off">
+                        <span id="autocompleteHint"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./scripts/cli.js"></script>
+</body>
+</html>
