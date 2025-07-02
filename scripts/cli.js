@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
         - Expense Tracker : Python, CSV<br>
         - E-commerce Website : Django, SQLite<br>
         - Quiz App : Python, Tabulate<br>
+        - ToDo-Summary Assistant : JS, PostgreSQL, Cohere AI, Slack<br>
         `,
 
       awards: `
@@ -85,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
         - Databases: SQL, MySQL, SQLite<br>
         - OS: Windows, Unix, macOS<br>
         - Tools: Git, VS Code, Command Line & Scripting<br>
-        - Other: System Troubleshooting, Incident Management
+        - Other: System Troubleshooting, Incident Management, RCA
         `,
         others: `
         - Rapid learner with a strong ability to adapt to new technologies<br>
