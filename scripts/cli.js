@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <span class="blue">      ██║ ██╔══██╗ </span>  Hostname: notyet.jb
         <span class="blue">      ██║ ██████╔╝ </span>  Time: ${currentTime}
         <span class="blue">███╗  ██║ ██╔══██╗ </span>  Email: <a href="mailto:jamesbright2004@gmail.com" class="custom-link">jamesbright2004@gmail.com</a>
-        <span class="blue">╚█████╔╝  ██████╔╝ </span>  GitHub: <a href="https://github.com/james1669" target="_blank" class="custom-link">GitHub.com/james1669</a>
+        <span class="blue">╚█████╔╝  ██████╔╝ </span>  GitHub: <a href="https://github.com/james1670" target="_blank" class="custom-link">GitHub.com/james1670</a>
         <span class="blue"> ╚════╝   ╚═════╝  </span>  LinkedIn: <a href="https://www.linkedin.com/in/james-bright-jb" target="_blank" class="custom-link">LinkedIn.com/in/james-bright-jb</a>
         </pre>`;
         },
@@ -56,8 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
     
 
       github: () => {
-          window.open("https://github.com/james1669", "_blank");
-          return `Opening <a href="https://github.com/james1669" target="_blank" class="custom-link">GitHub/KartikJain14</a>...`;
+          window.open("https://github.com/james1670", "_blank");
+          return `Opening <a href="https://github.com/james1670" target="_blank" class="custom-link">GitHub/KartikJain14</a>...`;
       },
 
       linkedin: () => {
