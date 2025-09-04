@@ -13,6 +13,7 @@ body {
   color: #e0e0e0;
 }
 
+/* ---------- Header ---------- */
 header {
   min-height: 10vh;
   display: flex;
@@ -39,6 +40,13 @@ header {
   transition: all 0.3s ease;
 }
 
+.tagline {
+  font-size: 1rem;
+  color: #ccc;
+  font-style: italic;
+  margin-top: 0.3rem;
+}
+
 .role {
   color: #aaa;
   font-size: 1.2rem;
@@ -50,7 +58,12 @@ header {
   border-radius: 50%;
   border: 3px solid #00bcd4;
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+  box-shadow: 0px 0px 20px rgba(0, 188, 212, 0.7);
+  transform: scale(1.05);
 }
 
 body.scrolled .header-content {
@@ -74,6 +87,7 @@ body.scrolled .role {
   display: none;
 }
 
+/* ---------- Navbar ---------- */
 .navbar {
   display: flex;
   justify-content: center;
@@ -89,13 +103,19 @@ body.scrolled .role {
   color: #00bcd4;
   text-decoration: none;
   font-size: 0.9rem;
-  transition: color 0.3s;
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
 .navbar a:hover {
   color: #ffffff;
 }
 
+.navbar a.active {
+  color: #ffffff;
+  border-bottom: 2px solid #00bcd4;
+}
+
+/* ---------- Sections ---------- */
 .section {
   padding: 3rem 2rem;
   scroll-margin-top: 100px; 
@@ -105,12 +125,25 @@ body.scrolled .role {
   margin-top: 1rem;
 }
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+
 .node, .project-card, .edu-node, .timeline-item {
   background-color: #1a1a1a;
   padding: 1rem;
   margin: 0.5rem;
   border-left: 4px solid #00bcd4;
   border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.node:hover, .project-card:hover, .edu-node:hover, .timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 12px rgba(0, 188, 212, 0.3);
 }
 
 .project-card {
@@ -123,6 +156,7 @@ body.scrolled .role {
   gap: 1rem;
 }
 
+/* ---------- CLI Toggle ---------- */
 .cli-toggle {
   position: fixed;
   top: 1rem;
@@ -171,10 +205,12 @@ input:checked + .slider:before {
   color: #ccc;
   font-size: 0.9rem;
 }
+
 h2 {
   color: #00bcd4; 
 }
 
+/* ---------- Contact Section ---------- */
 #contact a {
   color: inherit;      
   text-decoration: none; 
@@ -185,6 +221,17 @@ h2 {
   text-decoration: underline;
 }
 
+/* ---------- Languages Section ---------- */
+#languages h3 {
+  color: #bbb;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px dashed #333;
+  padding-bottom: 0.2rem;
+}
+
+/* ---------- Mobile Navbar ---------- */
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
@@ -232,4 +279,15 @@ h2 {
     flex: 0 0 auto;
     margin-right: 1rem;
   }
+}
+
+#languages .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#languages .project-card {
+  flex: none;
+  margin: 0;
 }

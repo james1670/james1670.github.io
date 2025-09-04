@@ -6,8 +6,6 @@ document.getElementById('guiSwitch').addEventListener('change', function () {
   }
 });
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("commandInput");
   const output = document.getElementById("output");
@@ -29,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
   <b>skills</b>      - Show my technical skills<br>
   <b>projects</b>    - List my featured projects<br>
   <b>others</b>      - Show my management/soft skills<br>
+  <!-- <b>awards</b>      - Show my achievements --> <!-- COMMENTED: awards section not in HTML --><br>
   <br>
   <b>🌐 Online Profiles:</b><br>
   <b>linkedin or ln</b>    - Open my LinkedIn profile<br>
@@ -53,57 +52,74 @@ document.addEventListener("DOMContentLoaded", function () {
         </pre>`;
         },
     
-    
-
       github: () => {
           window.open("https://github.com/james1670", "_blank");
-          return `Opening <a href="https://github.com/james1670" target="_blank" class="custom-link">GitHub/KartikJain14</a>...`;
+          return `Opening <a href="https://github.com/james1670" target="_blank" class="custom-link">GitHub/james1670</a>...`; // CHANGED: updated GitHub reference
       },
 
       linkedin: () => {
           window.open("https://www.linkedin.com/in/james-bright-jb", "_blank");
-          return `Opening <a href="https://www.linkedin.com/in/james-bright-jb" target="_blank" class="custom-link">LinkedIn/KartikJain1410</a>...`;
+          return `Opening <a href="https://www.linkedin.com/in/james-bright-jb" target="_blank" class="custom-link">LinkedIn/james-bright-jb</a>...`; // CHANGED: updated LinkedIn reference
       },
 
       projects: `
-        - My Bus : MongoDB, Express, React, Node.js<br>
-        - CineHub : MERN Stack Movie App<br>
-        - Portfolio Website : JavaScript, HTML, CSS<br>
-        - Expense Tracker : Python, CSV<br>
-        - E-commerce Website : Django, SQLite<br>
-        - Quiz App : Python, Tabulate<br>
-        - ToDo-Summary Assistant : JS, PostgreSQL, Cohere AI, Slack<br>
+        <b>Group Projects:</b><br>
+        - <b>My Bus</b> : MERN Stack - Bus tracking system with real-time route management<br> <!-- CHANGED: added description -->
+        - <b>CineHub</b> : MERN Stack - Movie streaming platform with listings and filtering<br> <!-- CHANGED: added description -->
+        <br>
+        <b>Individual Projects:</b><br>
+        - <b>School Website (Freelance)</b> : WordPress, Elementor, Hostinger<br> <!-- CHANGED: new project -->
+        - <b>Expense Tracker</b> : Python, Matplotlib, Tabulate, CSV<br> <!-- CHANGED: updated tech stack -->
+        - <b>E-commerce Website</b> : Django, SQLite, HTML, CSS, JS<br> <!-- CHANGED: updated tech stack -->
+        - <b>AI Task Manager</b> : NodeJS, React, PostgreSQL, Cohere AI, Slack<br> <!-- CHANGED: new project -->
+        - <b>GitHub Webhook Listener</b> : Flask, MongoDB, GitHub Webhooks<br> <!-- CHANGED: new project -->
         `,
 
-      awards: `
-      - Well currently working on some technical awards<br>
-      - Student of the Year 2022, GIETU<br>
-      - Powerlifter for 74 Kg division
-      `,
+      // awards: ` <!-- COMMENTED OUT: Not present in HTML portfolio -->
+      // - Well currently working on some technical awards<br>
+      // - Student of the Year 2022, GIETU<br>
+      // - Powerlifter for 74 Kg division
+      // `,
+
       skills: `
-        - Programming: Python, C, Java<br>
-        - Web: Django, JavaScript, PHP, HTML, CSS<br>
-        - Databases: SQL, MySQL, SQLite<br>
-        - OS: Windows, Unix, macOS<br>
-        - Tools: Git, VS Code, Command Line & Scripting<br>
-        - Other: System Troubleshooting, Incident Management, RCA
+        <b>Programming Languages:</b><br>
+        - <b>Python</b> (Intermediate – Backend, Scripting, Automation)<br> <!-- CHANGED: updated skill level and details -->
+        - <b>SQL</b> (MySQL, SQLite – Queries, Joins, Debugging)<br> <!-- CHANGED: added specific databases -->
+        - <b>C & Java</b><br> <!-- CHANGED: updated format -->
+        <br>
+        <b>Web Development:</b><br>
+        - <b>Django & Flask</b> (Web development & APIs)<br> <!-- CHANGED: updated framework details -->
+        - <b>HTML, CSS, JavaScript</b><br> <!-- CHANGED: separated web technologies -->
+        <br>
+        <b>DevOps & Tools:</b><br>
+        - <b>Git & GitHub</b> (Version control, CI/CD basics)<br> <!-- CHANGED: added CI/CD -->
+        - <b>Linux</b> (Ubuntu, Kali, Parrot – CLI & troubleshooting)<br> <!-- CHANGED: added specific distros -->
+        - <b>Docker</b> (Fundamentals)<br> <!-- CHANGED: new skill -->
+        <br>
+        <b>Cybersecurity Tools:</b><br>
+        - <b>Network Analysis:</b> Nmap, Wireshark, BurpSuite<br> <!-- CHANGED: new category -->
+        - <b>Wireless Security:</b> Aircrack-ng Suite, Wifite, Hydra<br> <!-- CHANGED: new category -->
         `,
-        others: `
-        - Rapid learner with a strong ability to adapt to new technologies<br>
+
+      others: `
+        <b>Soft Skills & Management:</b><br>
+        - Rapid learner with strong ability to adapt to new technologies<br> <!-- CHANGED: updated description -->
         - Clear communicator with solid interpersonal collaboration skills<br>
         - Strong analytical and problem-solving abilities<br>
         - Comfortable working both independently and in team settings<br>
+        - <b>Continuous Learning:</b> Currently expanding DevOps and cloud knowledge<br> <!-- CHANGED: added learning focus -->
       `,      
-      whoami: `<a href="https://www.linkedin.com/in/james-bright-jb" class="custom-link">James Bright</a> | Lifelong Learner`,
+
+      whoami: `<a href="https://www.linkedin.com/in/james-bright-jb" class="custom-link">James Bright</a> | DevOps & Python Backend Enthusiast | Cybersecurity Hobbyist | Lifelong Learner`, // CHANGED: updated with full name and tagline from HTML
 
       resume: () => {
           const link = document.createElement("a");
-          link.href = "/JB_Resume.pdf";
-          link.download = "JB_Resume.pdf";
+          link.href = "/JB_Resume.pdf"; // CHANGED: updated resume filename
+          link.download = "JB_Resume.pdf"; // CHANGED: updated download filename
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
-          return "Downloading resume...";
+          return "Downloading James Bright Das Resume..."; // CHANGED: updated download message
       },
 
       clear: () => resetTerminal(),
@@ -191,7 +207,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (match) input.value = match;
       hint.textContent = "";
   }
-
 
   input.addEventListener("keydown", function (event) {
       if (event.key === "Enter") {
