@@ -131,7 +131,6 @@ body.scrolled .role {
   gap: 1rem;
 }
 
-
 .node, .project-card, .edu-node, .timeline-item {
   background-color: #1a1a1a;
   padding: 1rem;
@@ -231,7 +230,7 @@ h2 {
   padding-bottom: 0.2rem;
 }
 
-/* ---------- Mobile Navbar ---------- */
+/* ---------- Mobile Navbar (Updated for static sidebar) ---------- */
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
@@ -249,26 +248,27 @@ h2 {
 
 @media (max-width: 768px) {
   .navbar {
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
   .menu-toggle {
     display: block;
+    z-index: 1100;
   }
 
   .nav-links {
     display: none;
-    position: absolute;
-    top: 100%;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
     left: 0;
-    right: 0;
+    height: 100%;
+    width: 70%;
     background-color: #252121;
-    padding: 1rem;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    white-space: nowrap;
-    z-index: 999;
+    padding-top: 3rem;
+    gap: 1rem;
+    z-index: 1000;
   }
 
   .nav-links.show {
@@ -276,8 +276,13 @@ h2 {
   }
 
   .nav-links a {
-    flex: 0 0 auto;
-    margin-right: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+    color: #00bcd4;
+  }
+
+  .nav-links a:hover {
+    color: #fff;
   }
 }
 
@@ -290,4 +295,4 @@ h2 {
 #languages .project-card {
   flex: none;
   margin: 0;
-}
+  }
