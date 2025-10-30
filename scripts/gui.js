@@ -13,3 +13,15 @@ const navLinks = document.getElementById('navLinks');
 menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
+
+
+// Close sidebar when clicking outside
+document.addEventListener('click', (e) => {
+  if (
+    navLinks.classList.contains('show') &&
+    !navLinks.contains(e.target) &&
+    !menuToggle.contains(e.target)
+  ) {
+    navLinks.classList.remove('show');
+  }
+});
